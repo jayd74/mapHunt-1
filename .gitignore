@@ -1,0 +1,5 @@
+node_modules
+notes
+.psd
+package-lock.json
+.DS_Store
