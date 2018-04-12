@@ -6,44 +6,103 @@ var tokyoTower = { lat: 35.658938, lng: 139.745422 };
 
 //embedding googlemaps
 function initMap() {
-  //   const cntower = { lat: 43.64276, lng: -79.387068 };
-  var cntower = { lat: 43.64276, lng: -79.387068 };
+  var prime = { lat: 0, lng: 0 };
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: cntower
+    zoom: 2.5,
+    center: prime
   });
   var marker = new google.maps.Marker({
-    position: cntower,
+    position: prime,
     map: map
   });
   //   const tokyoTower = { lat: 35.658938, lng: 139.745422 };
 }
-mapHunt.findMSG = function () {
-  $("#msg").on("click", function () {
-    var msg = { lat: 40.750748, lng: -73.993449 };
+mapHunt.findKingsLanding = function () {
+  $("#kings-landing").on("click", function () {
+    var kingsLanding = { lat: 42.641951, lng: 18.107203 };
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: 15,
-      center: msg
+      center: kingsLanding
     });
     var marker = new google.maps.Marker({
-      position: msg,
+      position: kingsLanding,
       map: map,
-      center: msg
+      center: kingsLanding
     });
   });
 };
 
-mapHunt.findTokyoTower = function () {
-  $('#tokyoTower').on('click', function () {
-    var pokeStop = { lat: 35.658938, lng: 139.745422 };
+mapHunt.findWinterfell = function () {
+  $('#winterfell').on('click', function () {
+    var winterfell = { lat: 56.185381, lng: -4.049884 };
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: 15,
-      center: pokeStop
+      center: winterfell
     });
     var marker = new google.maps.Marker({
-      position: pokeStop,
+      position: winterfell,
       map: map,
-      center: pokeStop
+      center: winterfell
+    });
+  });
+};
+
+mapHunt.findDragonstone = function () {
+  $("#dragonstone").on("click", function () {
+    var dragonstone = { lat: 55.167717, lng: -6.809537 };
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: dragonstone
+    });
+    var marker = new google.maps.Marker({
+      position: dragonstone,
+      map: map,
+      center: dragonstone
+    });
+  });
+};
+
+mapHunt.findSunspear = function () {
+  $("#sunspear").on("click", function () {
+    var sunspear = { lat: 37.383325, lng: -5.990172 };
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: sunspear
+    });
+    var marker = new google.maps.Marker({
+      position: sunspear,
+      map: map,
+      center: sunspear
+    });
+  });
+};
+
+mapHunt.findCastleBlack = function () {
+  $("#castle-black").on("click", function () {
+    var castleBlack = { lat: 54.815014, lng: -5.774517 };
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: castleBlack
+    });
+    var marker = new google.maps.Marker({
+      position: castleBlack,
+      map: map,
+      center: castleBlack
+    });
+  });
+};
+
+mapHunt.findIronIslands = function () {
+  $("#iron-islands").on("click", function () {
+    var ironIslands = { lat: 55.244497, lng: -6.368786 };
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: ironIslands
+    });
+    var marker = new google.maps.Marker({
+      position: ironIslands,
+      map: map,
+      center: ironIslands
     });
   });
 };
@@ -70,7 +129,11 @@ mapHunt.init = function () {
 
 $(function () {
   mapHunt.getCoordsFromTextSearch();
-  mapHunt.findTokyoTower();
-  mapHunt.findMSG();
+  mapHunt.findKingsLanding();
+  mapHunt.findWinterfell();
+  mapHunt.findDragonstone();
+  mapHunt.findSunspear();
+  mapHunt.findCastleBlack();
+  mapHunt.findIronIslands();
   initMap();
 });
