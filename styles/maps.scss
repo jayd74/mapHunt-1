@@ -1,6 +1,8 @@
 .location-container {
     display: none;
-}
+    background: url(../assets/paperbg.jpg);
+    background-size: cover; 
+    }
 
 .displayed-location-info {
     display: flex;
@@ -9,6 +11,7 @@
 }
 
 .location-info {
+    
     width: 45%;
 }
 

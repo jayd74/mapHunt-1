@@ -12,7 +12,7 @@ body {
 .title{
     background: $background;
     height: 80px;
-    position: fixed;
+    // position: fixed;
     box-shadow: 0 5px 10px rgba(0,0,0,0.8);
     width: 100%;
     z-index: 100;
@@ -27,6 +27,14 @@ h1{
         color: $accent;
         text-transform: uppercase;
     }
+}
+h2 {
+    text-align: center;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.8);
+}
+
+blockquote{
+    color: black;
 }
 
 

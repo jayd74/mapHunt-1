@@ -142,7 +142,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     color: white;
     border: none;
     text-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
-    background: black; }
+    background: black;
+    transition: 0.3s; }
   .selections #winterfell {
     background: url(../assets/winterfell.jpeg);
     background-size: cover;
@@ -154,8 +155,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     background-size: cover;
     background-position: center; }
 
+button:hover {
+  opacity: 0.7;
+  transition: 0.3s; }
+
 .location-container {
-  display: none; }
+  display: none;
+  background: url(../assets/paperbg.jpg);
+  background-size: cover; }
 
 .displayed-location-info {
   display: flex;
@@ -178,7 +185,6 @@ body {
 .title {
   background: #413732;
   height: 80px;
-  position: fixed;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
   width: 100%;
   z-index: 100; }
@@ -192,3 +198,10 @@ h1 {
   h1 span {
     color: #e2a128;
     text-transform: uppercase; }
+
+h2 {
+  text-align: center;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8); }
+
+blockquote {
+  color: black; }
