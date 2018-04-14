@@ -11,18 +11,30 @@
         transition: 0.3s;
     }
     #winterfell{
-        background: url(../assets/winterfell.jpeg);
+        background: url(../assets/winterfell-banner.jpg);
         background-size: cover;
-        background-position: center;
+        // background-position: center;
+        background-repeat: no-repeat;
     }
     #kings-landing{
-        background: url(../assets/kingsLanding.jpeg);
+        background: url(../assets/kingsLanding-banner.jpg);
+        background-size: cover;
     }
     #dragonstone {
-        background: url(../assets/dragonstone.jpeg);
+        background: url(../assets/dragonstone-banner.jpg);
         background-size: cover;
-        background-position: center;
+        // background-position: center;
     }
+    #sunspear {
+        background: url(../assets/sunspear-banner.jpg);
+        background-size: cover;
+        // background-position: center;
+    }
+    #iron-islands {
+        background: url(../assets/ironIslands-banner.jpg);
+        background-size: cover;
+        // background-position: center;
+    }    
 }
 
 button:hover {

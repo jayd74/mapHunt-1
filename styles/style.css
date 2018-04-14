@@ -145,15 +145,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     background: black;
     transition: 0.3s; }
   .selections #winterfell {
-    background: url(../assets/winterfell.jpeg);
+    background: url(../assets/winterfell-banner.jpg);
     background-size: cover;
-    background-position: center; }
+    background-repeat: no-repeat; }
   .selections #kings-landing {
-    background: url(../assets/kingsLanding.jpeg); }
+    background: url(../assets/kingsLanding-banner.jpg);
+    background-size: cover; }
   .selections #dragonstone {
-    background: url(../assets/dragonstone.jpeg);
-    background-size: cover;
-    background-position: center; }
+    background: url(../assets/dragonstone-banner.jpg);
+    background-size: cover; }
+  .selections #sunspear {
+    background: url(../assets/sunspear-banner.jpg);
+    background-size: cover; }
+  .selections #iron-islands {
+    background: url(../assets/ironIslands-banner.jpg);
+    background-size: cover; }
 
 button:hover {
   opacity: 0.7;
@@ -167,9 +173,17 @@ button:hover {
 .displayed-location-info {
   display: flex;
   justify-content: space-between;
-  height: 100vh; }
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto; }
+  .displayed-location-info a {
+    margin: 0 auto;
+    text-decoration: none;
+    color: firebrick; }
 
 .location-info {
+  margin-top: 45px;
   width: 45%; }
 
 #map {
