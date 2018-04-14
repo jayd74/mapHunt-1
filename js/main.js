@@ -29,6 +29,7 @@ mapHunt.findKingsLanding = function () {
       map: map,
       center: kingsLanding
     });
+    $('.location-info').html("\n      <h1>TESTING SHIT</h1>\n      <p>EAT SHITS FERD</p>\n      <a>Maybe a Link to some stuff!</a>\n      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>\n    ");
   });
 };
 
@@ -44,6 +45,7 @@ mapHunt.findWinterfell = function () {
       map: map,
       center: winterfell
     });
+    $(".location-info").html("\n      <h1>TESTING SHIT</h1>\n      <p>EAT SHITS FERD</p>\n      <a>Maybe a Link to some stuff!</a>\n      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>\n    ");
   });
 };
 
@@ -59,6 +61,7 @@ mapHunt.findDragonstone = function () {
       map: map,
       center: dragonstone
     });
+    $(".location-info").html("\n      <h1>TESTING SHIT</h1>\n      <p>EAT SHITS FERD</p>\n      <a>Maybe a Link to some stuff!</a>\n      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>\n    ");
   });
 };
 
@@ -74,6 +77,7 @@ mapHunt.findSunspear = function () {
       map: map,
       center: sunspear
     });
+    $(".location-info").html("\n      <h1>TESTING SHIT</h1>\n      <p>EAT SHITS FERD</p>\n      <a>Maybe a Link to some stuff!</a>\n      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>\n    ");
   });
 };
 
@@ -89,6 +93,7 @@ mapHunt.findCastleBlack = function () {
       map: map,
       center: castleBlack
     });
+    $(".location-info").html("\n      <h1>TESTING SHIT</h1>\n      <p>EAT SHITS FERD</p>\n      <a>Maybe a Link to some stuff!</a>\n      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>\n    ");
   });
 };
 
@@ -104,6 +109,18 @@ mapHunt.findIronIslands = function () {
       map: map,
       center: ironIslands
     });
+    $(".location-info").html("\n      <h1>TESTING SHIT</h1>\n      <p>EAT SHITS FERD</p>\n      <a>Maybe a Link to some stuff!</a>\n      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>\n    ");
+  });
+};
+
+mapHunt.showMap = function () {
+  $('button').on('click', function () {
+    $('.location-container').show();
+    // $('.location-container').scrollTop(0);
+
+    $("html, body").animate({
+      scrollTop: $(".displayed-location-info").offset().top
+    }, 500);
   });
 };
 
@@ -129,6 +146,7 @@ mapHunt.init = function () {
 
 $(function () {
   mapHunt.getCoordsFromTextSearch();
+  mapHunt.showMap();
   mapHunt.findKingsLanding();
   mapHunt.findWinterfell();
   mapHunt.findDragonstone();

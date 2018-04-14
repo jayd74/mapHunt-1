@@ -1,0 +1,19 @@
+.location-container {
+    display: none;
+}
+
+.displayed-location-info {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.location-info {
+    width: 45%;
+}
+
+#map {
+    height: 500px;
+    width: 45%;
+    margin-top: 50px;
+ }

@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <script></script>
     <title>Map Hunt</title>
 </head>
 <body>
-    <h1>Map Hunt</h1>
-    <div id="map">
+    <div class="title"><h1><span>Westeros</span>Advisor</h1></div>
+    <div class="selections">
+        <button id="kings-landing">Kings Landing</button>
+        <button id="winterfell">Winterfell</button>
+        <button id="dragonstone">Dragonstone</button>
+        <button id="sunspear">Sunspear</button>
+        <button id="castle-black">Castle Black</button>
+        <button id="iron-islands">Iron Islands</button>
     </div>
-    <button id="kings-landing">Kings Landing</button>
-    <button id="winterfell">Winterfell</button>
-    <button id="dragonstone">Dragonstone</button>
-    <button id="sunspear">Sunspear and the Water Garden</button>
-    <button id="castle-black">Castle Black</button>
-    <button id="iron-islands">Iron Islands</button>
+    <div class="location-container">
+        <div class="displayed-location-info">
+            <div id="map">
+            </div>
+            <div class="location-info">
+            </div>
+        </div>
+    </div>
 
     
 </body>

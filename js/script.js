@@ -28,6 +28,12 @@ mapHunt.findKingsLanding = function() {
       map: map,
       center: kingsLanding,
     });
+    $('.location-info').html(`
+      <h1>TESTING SHIT</h1>
+      <p>EAT SHITS FERD</p>
+      <a>Maybe a Link to some stuff!</a>
+      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+    `)
   });
 };
 
@@ -46,6 +52,12 @@ mapHunt.findWinterfell = function(){
           map: map,
           center: winterfell
         });
+    $(".location-info").html(`
+      <h1>TESTING SHIT</h1>
+      <p>EAT SHITS FERD</p>
+      <a>Maybe a Link to some stuff!</a>
+      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+    `);                
     }); 
 };
 
@@ -61,6 +73,12 @@ mapHunt.findDragonstone = function() {
       map: map,
       center: dragonstone
     });
+    $(".location-info").html(`
+      <h1>TESTING SHIT</h1>
+      <p>EAT SHITS FERD</p>
+      <a>Maybe a Link to some stuff!</a>
+      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+    `);    
   });
 };
 
@@ -76,6 +94,12 @@ mapHunt.findSunspear = function() {
       map: map,
       center: sunspear
     });
+    $(".location-info").html(`
+      <h1>TESTING SHIT</h1>
+      <p>EAT SHITS FERD</p>
+      <a>Maybe a Link to some stuff!</a>
+      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+    `);    
   });
 };
 
@@ -91,6 +115,12 @@ mapHunt.findCastleBlack = function() {
       map: map,
       center: castleBlack
     });
+    $(".location-info").html(`
+      <h1>TESTING SHIT</h1>
+      <p>EAT SHITS FERD</p>
+      <a>Maybe a Link to some stuff!</a>
+      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+    `);    
   });
 };
 
@@ -106,9 +136,25 @@ mapHunt.findIronIslands = function() {
       map: map,
       center: ironIslands
     });
+    $(".location-info").html(`
+      <h1>TESTING SHIT</h1>
+      <p>EAT SHITS FERD</p>
+      <a>Maybe a Link to some stuff!</a>
+      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+    `);    
   });
 };
 
+mapHunt.showMap = function() {
+  $('button').on('click', function() {
+    $('.location-container').show();
+    // $('.location-container').scrollTop(0);
+
+     $("html, body").animate({
+       scrollTop: $(".displayed-location-info").offset().top
+     },500);
+  })
+}
 
 // First ajax request will be pulling down information from google places through a text search that the user inputs.
 // Returns long and lat when given name of a place
@@ -132,6 +178,7 @@ mapHunt.init = function(){
 
 $(function() {
     mapHunt.getCoordsFromTextSearch();
+    mapHunt.showMap();
     mapHunt.findKingsLanding();
     mapHunt.findWinterfell();
     mapHunt.findDragonstone();
