@@ -1,0 +1,32 @@
+.selections {
+    @include flex(row, center, center);
+
+    button {
+        width: 500px;
+        height: 100vh;
+        color: white; 
+        border: none;
+        text-shadow: 0 3px 7px rgba(0,0,0,0.8);
+        background: black;
+        transition: 0.3s;
+    }
+    #winterfell{
+        background: url(../assets/winterfell.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    #kings-landing{
+        background: url(../assets/kingsLanding.jpeg);
+    }
+    #dragonstone {
+        background: url(../assets/dragonstone.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+button:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
