@@ -174,7 +174,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 100%;
   width: 90%;
   margin: 0 auto; }
   .displayed-location-info a {

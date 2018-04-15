@@ -36,8 +36,7 @@ mapHunt.findKingsLanding = function() {
       <blockquote cite="https://en.wikipedia.org/wiki/Walls_of_Dubrovnik">
        The Walls of Dubrovnik (Croatian: Dubrovačke gradske zidine) are a series of defensive stone walls surrounding the city of Dubrovnik in southern Croatia. With numerous additions and modifications throughout their history, they have been considered to be amongst the great fortification systems of the Middle Ages, as they were never breached by a hostile army during this time period.In 1979, the old city of Dubrovnik, which includes a substantial portion of the old walls of Dubrovnik, joined the UNESCO list of World Heritage Sites.
       </blockquote>
-      <a>Maybe a Link to some stuff!</a>
-      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+      <a href="https://www.tripadvisor.ca/Attraction_Review-g295371-d522915-Reviews-Ancient_City_Walls-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html" target="_blank">Explore</a>
     `);
   });
 };
@@ -66,8 +65,7 @@ mapHunt.findWinterfell = function(){
       <blockquote cite="https://en.wikipedia.org/wiki/Doune_Castle">
         Doune Castle is a medieval stronghold near the village of Doune, in the Stirling district of central Scotland. The castle is sited on a wooded bend where the Ardoch Burn flows into the River Teith. It lies 8 miles (13 km) north-west of Stirling, where the Teith flows into the River Forth. Upstream, 8 miles (13 km) further north-west, the town of Callander lies at the edge of the Trossachs, on the fringe of the Scottish Highlands
       </blockquote>
-      <a>Maybe a Link to some stuff!</a>
-      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+      <a href="https://www.tripadvisor.ca/Attraction_Review-g1010312-d286657-Reviews-Doune_Castle-Doune_Stirling_Scotland.html" target="_blank">Explore</a>
     `);                
     }); 
 };
@@ -94,8 +92,7 @@ mapHunt.findDragonstone = function() {
         Gaztelugatxe is an islet on the coast of Biscay belonging to the municipality of Bermeo, Basque Country (Spain). It is connected to the mainland by a man-made bridge. On top of the island stands a hermitage, dedicated to John the Baptist, that dates from the 10th century, although discoveries indicate that the date might be the 9th century. With another small neighboring island, Aketx, they form a protected biotope that extends from the town of Bakio until Cape Matxitxako, on the Bay of Biscay.
       </blockquote>
 
-      <a>Maybe a Link to some stuff!</a>
-      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+      <a href="https://www.tripadvisor.ca/Attraction_Review-g1064174-d2307740-Reviews-San_Juan_de_Gaztelugatxe-Bermeo_Province_of_Vizcaya_Basque_Country.html" target="_blank">Explore</a>
     `);    
   });
 };
@@ -121,8 +118,7 @@ mapHunt.findSunspear = function() {
       <blockquote cite="https://en.wikipedia.org/wiki/Alc%C3%A1zar_of_Seville">
         The Alcázar of Seville (pronounced [alˈkaθar]; Spanish: Reales Alcázares de Sevilla or "Royal Alcazars of Seville") is a royal palace in Seville, Spain, built for the Christian king Peter of Castile.[1] It was built by Castilian Christians on the site of an Abbadid Muslim residential fortress destroyed after the Christian conquest of Seville.[4] Although some elements of other civilizations remains. The palace, a preeminent example of Mudéjar architecture in the Iberian Peninsula, is renowned as one of the most beautiful  
       </blockquote>
-      <a>Maybe a Link to some stuff!</a>
-      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+      <a href="https://www.tripadvisor.ca/Attraction_Review-g187443-d191139-Reviews-Real_Alcazar-Seville_Province_of_Seville_Andalucia.html" target="_blank">Explore</a>
     `);    
   });
 };
@@ -148,8 +144,7 @@ mapHunt.findCastleBlack = function() {
       <blockquote cite="https://en.wikipedia.org/wiki/Magheramorne">
         Magheramorne (from Irish: Machaire Morna) is a hamlet in County Antrim, Northern Ireland. It is about 5 miles south of Larne on the shores of Larne Lough. It had a population of 75 people in the 2001 Census. Following the reform of Northern Ireland's local government system on 1 April 2015, Magheramorne lies within the Mid and East Antrim Borough Council area.
       </blockquote>
-      <a>Maybe a Link to some stuff!</a>
-      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+      <a href="https://www.tripadvisor.ca/Attractions-g7340575-Activities-Magheramorne_County_Antrim_Northern_Ireland.html" target="_blank">Explore</a>
     `);    
   });
 };
@@ -175,8 +170,7 @@ mapHunt.findIronIslands = function() {
       <blockquote cite="https://en.wikipedia.org/wiki/Ballintoy">
         Ballintoy (from Irish Baile an Tuaigh, meaning 'the northern townland') is a small village, townland (of 274 acres) and civil parish in County Antrim, Northern Ireland. It is alongside the B15 coast road, 28 km (17 mi) north-east of Coleraine, 8 km (5.0 mi) west of Ballycastle and between it and Bushmills. It is in the historic barony of Cary.The village lies about one kilometre from Ballintoy Harbour, a small fishing harbour at the end of a very small, narrow, steep road down Knocksaughey hill which passes by the entrance to Larrybane and Carrick-a-Rede Rope Bridge.
       </blockquote>
-      <a>Maybe a Link to some stuff!</a>
-      <img alt='MAYBE SOME REAL NICES PHOTOS'></img>
+      <a href="https://www.tripadvisor.ca/Attraction_Review-g551728-d3530433-Reviews-Ballintoy_Harbour-Ballintoy_County_Antrim_Northern_Ireland.html" target="_blank">Explore</a>
     `);    
   });
 };
@@ -184,12 +178,18 @@ mapHunt.findIronIslands = function() {
 mapHunt.showMap = function() {
   $('button').on('click', function() {
     $('.location-container').show();
-    // $('.location-container').scrollTop(0);
-
      $("html, body").animate({
        scrollTop: $(".displayed-location-info").offset().top
      },500);
   })
+}
+
+mapHunt.selectLocation = function() {
+  $("#toTop").on("click", function() {
+    $("html, body").animate({ 
+      scrollTop: $("#top").offset().top 
+    }, 500);
+  });
 }
 
 // First ajax request will be pulling down information from google places through a text search that the user inputs.
@@ -215,6 +215,7 @@ mapHunt.init = function(){
 $(function() {
     mapHunt.getCoordsFromTextSearch();
     mapHunt.showMap();
+    mapHunt.selectLocation();
     mapHunt.findKingsLanding();
     mapHunt.findWinterfell();
     mapHunt.findDragonstone();
