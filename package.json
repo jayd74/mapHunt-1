@@ -1,9 +1,9 @@
 {
   "name": "jason_du_portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
@@ -11,12 +11,20 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-babel": "^7.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.2.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aathavan64/mapHunt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aathavan64/mapHunt/issues"
+  },
+  "homepage": "https://github.com/Aathavan64/mapHunt#readme",
+  "description": ""
 }

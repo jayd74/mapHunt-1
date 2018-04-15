@@ -10,35 +10,44 @@
         background: black;
         transition: 0.3s;
     }
-    #winterfell{
+    .winterfell-container{
         background: url(../assets/winterfell-banner.jpg);
-        background-size: cover;
-        // background-position: center;
         background-repeat: no-repeat;
     }
-    #kings-landing{
+    .kings-landing-container{
         background: url(../assets/kingsLanding-banner.jpg);
-        background-size: cover;
     }
-    #dragonstone {
+    .dragonstone-container {
         background: url(../assets/dragonstone-banner.jpg);
-        background-size: cover;
-        // background-position: center;
     }
-    #sunspear {
+    .sunspear-container {
         background: url(../assets/sunspear-banner.jpg);
-        background-size: cover;
-        // background-position: center;
     }
-    #iron-islands {
+    .iron-islands-container {
         background: url(../assets/ironIslands-banner.jpg);
+    }  
+    .castle-black-container {
+        background: url(../assets/castleBlack.png);
+    }
+    .button-container {
         background-size: cover;
-        // background-position: center;
-    }    
+    }
 }
 
 button:hover {
     opacity: 0.7;
     transition: 0.3s;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .selections {
+        flex-direction: column;
+
+        .button-container {
+            background-position: 50% 66%;
+        }
+    }
+
 }
 

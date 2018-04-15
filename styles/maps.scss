@@ -23,8 +23,24 @@
     width: 45%;
 }
 
-#map {
+.map {
     height: 500px;
     width: 45%;
     margin-top: 50px;
  }
+
+ /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .displayed-location-info {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 70%;
+        align-self: center;
+    }
+
+    .location-info {
+        width: 100%;
+    }
+}
