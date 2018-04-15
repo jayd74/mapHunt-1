@@ -144,26 +144,32 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     text-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
     background: black;
     transition: 0.3s; }
-  .selections #winterfell {
+  .selections .winterfell-container {
     background: url(../assets/winterfell-banner.jpg);
-    background-size: cover;
     background-repeat: no-repeat; }
-  .selections #kings-landing {
-    background: url(../assets/kingsLanding-banner.jpg);
-    background-size: cover; }
-  .selections #dragonstone {
-    background: url(../assets/dragonstone-banner.jpg);
-    background-size: cover; }
-  .selections #sunspear {
-    background: url(../assets/sunspear-banner.jpg);
-    background-size: cover; }
-  .selections #iron-islands {
-    background: url(../assets/ironIslands-banner.jpg);
+  .selections .kings-landing-container {
+    background: url(../assets/kingsLanding-banner.jpg); }
+  .selections .dragonstone-container {
+    background: url(../assets/dragonstone-banner.jpg); }
+  .selections .sunspear-container {
+    background: url(../assets/sunspear-banner.jpg); }
+  .selections .iron-islands-container {
+    background: url(../assets/ironIslands-banner.jpg); }
+  .selections .castle-black-container {
+    background: url(../assets/castleBlack.png); }
+  .selections .button-container {
     background-size: cover; }
 
 button:hover {
   opacity: 0.7;
   transition: 0.3s; }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .selections {
+    flex-direction: column; }
+    .selections .button-container {
+      background-position: 50% 66%; } }
 
 .location-container {
   display: none;
@@ -186,10 +192,20 @@ button:hover {
   margin-top: 45px;
   width: 45%; }
 
-#map {
+.map {
   height: 500px;
   width: 45%;
   margin-top: 50px; }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .displayed-location-info {
+    flex-direction: column; }
+  .map {
+    width: 70%;
+    align-self: center; }
+  .location-info {
+    width: 100%; } }
 
 body {
   color: firebrick;
