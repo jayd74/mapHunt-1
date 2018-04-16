@@ -168,6 +168,8 @@ button:hover {
 @media (max-width: 480px) {
   .selections {
     flex-direction: column; }
+    .selections button {
+      width: 100%; }
     .selections .button-container {
       background-position: 50% 66%; } }
 
